@@ -14,9 +14,16 @@ count=0
 for line in infile:
     count=count+1
 
-word1 = getline()
-word2 = getline()
+parser = argparse.ArgumentParser()
+parser.add_argument('-w', action="store", default=2, type=int)
+parsed = parser.parse_args()
+
+wordcount = parsed.w
+nick = ""
+
+for x in xrange(0, wordcount):
+    nick += getline()
 
 
-print word1+word2
+print nick
 
