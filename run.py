@@ -23,12 +23,14 @@ wordcount = parsed.w
 numcount = parsed.n
 mx = "".rjust(numcount, '9')
 
-maxrand = int(mx)
+randnum = str(random.randint(0, int(mx)))
 
 nick = ""
 
 for x in xrange(0, wordcount):
     nick += getline()
+
+nick += randnum
 
 
 print nick
