@@ -23,14 +23,22 @@ wordcount = parsed.w
 numcount = parsed.n
 mx = "".rjust(numcount, '9')
 
-randnum = str(random.randint(0, int(mx)))
 
-nick = ""
+def getNick(words, nums):
+    randnum = str(random.randint(0, int(nums)))
 
-for x in xrange(0, wordcount):
-    nick += getline()
+    nick = ""
 
-nick += randnum
+    for x in xrange(0, words):
+        nick += getline()
+
+    nick += randnum
+    return nick
+
+
+
+if __name__ == "__main__":
+
 
 
 print nick
