@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="775">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#26#42#0" expanded="true" />
               </folding>
@@ -288,7 +288,13 @@
       <option name="project" value="LOCAL" />
       <updated>1415312300772</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="append numbers&#10;">
+      <created>1415312777498</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1415312777498</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -346,7 +352,7 @@
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="775">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#26#42#0" expanded="true" />
           </folding>
