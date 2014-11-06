@@ -16,9 +16,12 @@ for line in infile:
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-w', action="store", default=2, type=int)
+parser.add_argument('-n', action="store", default=2, type=int)
 parsed = parser.parse_args()
 
 wordcount = parsed.w
+numcount = parsed.n
+
 nick = ""
 
 for x in xrange(0, wordcount):
