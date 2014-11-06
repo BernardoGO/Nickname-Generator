@@ -21,6 +21,9 @@ parsed = parser.parse_args()
 
 wordcount = parsed.w
 numcount = parsed.n
+mx = "".rjust(numcount, '9')
+
+maxrand = int(mx)
 
 nick = ""
 
