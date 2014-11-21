@@ -6,3 +6,11 @@ jump
 black
 blue
 brown
+car
+world
+cow
+master
+ramp
+dog
+bear
+beer

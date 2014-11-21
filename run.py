@@ -15,8 +15,6 @@ for line in infile:
     count=count+1
 
 
-
-
 def getNick(words, nums):
     mx = "".rjust(nums, '9')
     randnum = str(random.randint(0, int(mx)))
