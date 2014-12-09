@@ -23,11 +23,8 @@ def getNick(words, nums, firstCharUpper = False):
     if firstCharUpper: print getline().title()
 
     for x in xrange(0, words):
-        c = getline()
-        if firstCharUpper == True:
-            nick += c
-        else:
-            nick += c.title()
+        _=getline()
+        nick += _.title() if firstCharUpper else _
 
     nick += randnum
     return nick
