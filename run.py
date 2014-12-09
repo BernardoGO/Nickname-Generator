@@ -1,6 +1,5 @@
 __author__ = 'bernardo'
 
-
 import linecache
 import random
 import argparse
