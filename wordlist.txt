@@ -9,6 +9,8 @@ brown
 car
 world
 cow
+key
+pocket
 master
 ramp
 dog
