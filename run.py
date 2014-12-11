@@ -17,7 +17,7 @@ for line in infile:
 def getNick(words, nums, firstCharUpper = False, divideNumber = False):
     mx = "".rjust(nums, '9')
     randnum = str(random.randint(0, int(mx)))
-
+    underscore = '_' if divideNumber else ''
     nick = ""
     if firstCharUpper: print getline().title()
 
@@ -25,7 +25,7 @@ def getNick(words, nums, firstCharUpper = False, divideNumber = False):
         _=getline()
         nick += _.title() if firstCharUpper else _
 
-    nick += randnum
+    nick += underscore + randnum
     return nick
 
 
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     wordcount = parsed.w
     numcount = parsed.n
     firstCharUpper = bool(parsed.f)
+    divideNumber = bool(parsed.d)
 
-
-    print getNick(wordcount, numcount, firstCharUpper)
+    print getNick(wordcount, numcount, firstCharUpper, divideNumber)
 
