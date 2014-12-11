@@ -14,7 +14,7 @@ for line in infile:
     count=count+1
 
 
-def getNick(words, nums, firstCharUpper = False):
+def getNick(words, nums, firstCharUpper = False, divideNumber = False):
     mx = "".rjust(nums, '9')
     randnum = str(random.randint(0, int(mx)))
 
@@ -34,6 +34,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-w', action="store", default=2, type=int)
     parser.add_argument('-n', action="store", default=2, type=int)
+    parser.add_argument('-d', action="store_true", default=False)
     parser.add_argument('-f', action="store_true", default=False)
     parsed = parser.parse_args()
 
