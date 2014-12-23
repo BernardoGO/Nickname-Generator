@@ -22,3 +22,8 @@ bob
 john
 robert
 lucid
+mario
+luigi
+brazil
+nick
+name
