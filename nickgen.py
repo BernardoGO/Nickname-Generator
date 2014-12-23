@@ -14,9 +14,10 @@ for line in infile:
     count=count+1
 
 def addToList(word):
-
+    global infile
     for line in infile:
-        if line.lower() == word.lower():
+        print line.lower().strip()
+        if line.lower().strip() == word.lower().strip():
             print ("Already Exists")
             return
     else:
