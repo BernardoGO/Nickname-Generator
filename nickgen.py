@@ -32,7 +32,12 @@ def getNick(words, nums, firstCharUpper = False, divideNumber = False):
     if firstCharUpper: print getline().title()
 
     for x in xrange(0, words):
-        _=getline()
+        go = False
+        _ = ""
+        while not go:
+            _=getline()
+            if len(_) > 1: go = True
+
         nick += _.title() if firstCharUpper else _
 
     nick += underscore + randnum
@@ -46,7 +51,7 @@ if __name__ == "__main__":
     parser.add_argument('-n', action="store", default=2, type=int)
     parser.add_argument('-d', action="store_true", default=False)
     parser.add_argument('-f', action="store_true", default=False)
-    parser.add_argument('-a', action="store_true", default=False)
+    parser.add_argument('-a', action="store", default=False)
 
     parsed = parser.parse_args()
 
@@ -54,10 +59,11 @@ if __name__ == "__main__":
     numcount = parsed.n
     firstCharUpper = bool(parsed.f)
     divideNumber = bool(parsed.d)
-    newword = bool(parsed.a)
+    newword = (parsed.a)
 
     if newword:
-        addToList()
+        addToList("\n"+newword)
+    else:
 
-    print getNick(wordcount, numcount, firstCharUpper, divideNumber)
+        print getNick(wordcount, numcount, firstCharUpper, divideNumber)
 
