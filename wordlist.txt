@@ -27,5 +27,4 @@ luigi
 brazil
 nick
 name
-nick
-nick
+sharp

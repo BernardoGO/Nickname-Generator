@@ -12,11 +12,12 @@ infile=open(wordsfile, "r")
 count=0
 for line in infile:
     count=count+1
+print count
 
 def addToList(word):
-    global infile
+    infile=open(wordsfile, "r")
     for line in infile:
-        print line.lower().strip()
+        print "dsaf" +  line.lower().strip()
         if line.lower().strip() == word.lower().strip():
             print ("Already Exists")
             return
