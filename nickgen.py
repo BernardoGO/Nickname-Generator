@@ -16,13 +16,13 @@ for line in infile:
 def addToList(word):
 
     for line in infile:
-        if line == word.lower():
-            print "Already Exists"
+        if line.lower() == word.lower():
+            print ("Already Exists")
             return
     else:
         with open(wordsfile, "a") as myfile:
-            myfile.write(word)
-            print "ADDED"
+            myfile.write(word.lower())
+            print ("ADDED")
 
 def getNick(words, nums, firstCharUpper = False, divideNumber = False):
     mx = "".rjust(nums, '9')
@@ -65,5 +65,5 @@ if __name__ == "__main__":
         addToList("\n"+newword)
     else:
 
-        print getNick(wordcount, numcount, firstCharUpper, divideNumber)
+        print (getNick(wordcount, numcount, firstCharUpper, divideNumber))
 
