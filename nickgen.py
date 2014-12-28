@@ -30,7 +30,7 @@ def getNick(words, nums, firstCharUpper = False, divideNumber = False):
     randnum = str(random.randint(0, int(mx)))
     underscore = '_' if divideNumber else ''; nick = ""
 
-    for x in xrange(0, words):
+    for x in range(0, words):
         go = False
         _ = ""
         while not go:
