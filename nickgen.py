@@ -30,8 +30,6 @@ def getNick(words, nums, firstCharUpper = False, divideNumber = False):
     randnum = str(random.randint(0, int(mx)))
     underscore = '_' if divideNumber else ''; nick = ""
 
-    if firstCharUpper: print getline().title()
-
     for x in xrange(0, words):
         go = False
         _ = ""
