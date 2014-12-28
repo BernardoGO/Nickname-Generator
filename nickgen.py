@@ -12,7 +12,6 @@ infile=open(wordsfile, "r")
 count=0
 for line in infile:
     count=count+1
-print count
 
 def addToList(word):
     infile=open(wordsfile, "r")
