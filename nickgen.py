@@ -17,7 +17,7 @@ print count
 def addToList(word):
     infile=open(wordsfile, "r")
     for line in infile:
-        print "dsaf" +  line.lower().strip()
+
         if line.lower().strip() == word.lower().strip():
             print ("Already Exists")
             return
