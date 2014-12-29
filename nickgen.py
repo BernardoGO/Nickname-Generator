@@ -25,7 +25,7 @@ def addToList(word):
             myfile.write(word.lower())
             print ("ADDED")
 
-def getNick(words, nums, firstCharUpper = False, divideNumber = False):
+def getNick(words, nums, firstCharUpper = False, divideNumber = False, startsWith  = ''):
     mx = "".rjust(nums, '9')
     randnum = str(random.randint(0, int(mx)))
     underscore = '_' if divideNumber else ''; nick = ""
