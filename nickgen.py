@@ -51,6 +51,7 @@ if __name__ == "__main__":
     parser.add_argument('-d', action="store_true", default=False)
     parser.add_argument('-f', action="store_true", default=False)
     parser.add_argument('-a', action="store", default=False)
+    parser.add_argument('-s', action="store", default='')
 
     parsed = parser.parse_args()
 
@@ -59,10 +60,11 @@ if __name__ == "__main__":
     firstCharUpper = bool(parsed.f)
     divideNumber = bool(parsed.d)
     newword = (parsed.a)
+    startsWith = parsed.s
 
     if newword:
         addToList("\n"+newword)
     else:
 
-        print (getNick(wordcount, numcount, firstCharUpper, divideNumber))
+        print (getNick(wordcount, numcount, firstCharUpper, divideNumber, startsWith))
 
