@@ -28,7 +28,7 @@ def addToList(word):
 def getNick(words, nums, firstCharUpper = False, divideNumber = False, startsWith  = ''):
     mx = "".rjust(nums, '9')
     randnum = str(random.randint(0, int(mx)))
-    underscore = '_' if divideNumber else ''; nick = ""
+    underscore = '_' if divideNumber else ''; nick = startsWith
 
     for x in range(0, words):
         go = False
